@@ -1,0 +1,43 @@
+body {
+  background: #FFFFFF;
+}
+
+footer {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.navbar-nav li button {
+  margin-top: 1ch;
+}
+
+#texto {
+  text-align: left;
+  background: #FFFCAA;
+  font-family: sans-serif;
+  font-size: 18px;
+  padding: 2ch;
+  display: block;
+  width: 100%;
+  min-height: 500px;
+}
+
+.heart {
+  color: #E30871;
+}
+
+a:link, a:visited {
+  color: #00455c;
+}
+
+a:hover {
+  color: #E30871;
+}
+
+.noPadding {
+  padding: 0;
+}
+
+.noMargin {
+  margin: 0;
+}
