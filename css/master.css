@@ -1,5 +1,5 @@
 body {
-  background: #F4F4F4;
+  background: #9F9F9F;
 }
 
 footer {
@@ -19,7 +19,7 @@ footer {
   padding: 2ch;
   display: block;
   width: 100%;
-  min-height: 400px;
+  min-height: 500px;
 }
 
 .heart {
@@ -43,7 +43,7 @@ a:hover {
 }
 
 #keyboard-container {
-  background: #F4F4F4;
+  background: #9F9F9F;
   text-align: center;
 }
 
@@ -63,6 +63,15 @@ a:hover {
 button:hover {
   color: rgba(0,0,0,1) !important;
   background-blend-mode: lighten;
+}
+
+.disabled {
+  cursor: not-allowed;
+  background: #9F9F9F;
+}
+
+.disabled:hover {
+  color: #9F9F9F !important;
 }
 
 button[name="q"] {background-image: url("../img/keyboard/q.jpg")}
