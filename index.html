@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Hardpath Keyboard</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/master.css">
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="page-header">
+          <h1>Decifre um livro</h1>
+        </div>
+        <p>Hello folks, fizemos esse teclado com o intuito de acelerar o processo de tradução dos documentos deixados por <a href="https://glo.bo/2oSMn6C">Bruno Silva Borges</a>,</p>
+        <p>se deseja melhorar a qualidade da mesma basta contribuir em nosso repositório. <a href="https://github.com/renoirfaria/hardpath">renoirfaria/hardpath</a></p>
+        <p>Criado com <span class="heart">&hearts;</span> por <a href="#">@renoirfaria</a> e <a href="#">@igorrincon</a> e todos os outros <a href="https://github.com/renoirfaria/hardpath/graphs/contributors">contribuintes.</a></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <button type="button" onclick="controller.salvar()" class="btn btn-success">Salvar texto</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <br>
+        <p id="texto" contenteditable="true" style="cursor: text;"></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <div id="keyboard-container">
+          <button onclick="controller.digita(this)" name="q">Q</button>
+          <button onclick="controller.digita(this)" name="w">W</button>
+          <button onclick="controller.digita(this)" name="e">E</button>
+          <button onclick="controller.digita(this)" name="r">R</button>
+          <button onclick="controller.digita(this)" name="t">T</button>
+          <button onclick="controller.digita(this)" name="y">Y</button>
+          <button onclick="controller.digita(this)" name="u">U</button>
+          <button onclick="controller.digita(this)" name="i">I</button>
+          <button onclick="controller.digita(this)" name="o">O</button>
+          <button onclick="controller.digita(this)" name="p">P</button>
+          <br>
+          <button onclick="controller.digita(this)" name="a">A</button>
+          <button onclick="controller.digita(this)" name="s">S</button>
+          <button onclick="controller.digita(this)" name="d">D</button>
+          <button onclick="controller.digita(this)" name="f">F</button>
+          <button onclick="controller.digita(this)" name="g">G</button>
+          <button onclick="controller.digita(this)" name="h">H</button>
+          <button onclick="controller.digita(this)" name="j">J</button>
+          <button onclick="controller.digita(this)" name="k">K</button>
+          <button onclick="controller.digita(this)" name="l">L</button>
+          <button onclick="controller.digita(this)" name="ç">Ç</button>
+          <br>
+          <button onclick="controller.digita(this)" name="z">z</button>
+          <button onclick="controller.digita(this)" name="x">x</button>
+          <button onclick="controller.digita(this)" name="c">c</button>
+          <button onclick="controller.digita(this)" name="v">v</button>
+          <button onclick="controller.digita(this)" name="b">b</button>
+          <button onclick="controller.digita(this)" name="n">n</button>
+          <button onclick="controller.digita(this)" name="m">m</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <script src="js/controllers/KeyboardController.js" charset="utf-8"></script>
+    <script type="text/javascript">
+    let controller = new KeyboardController();
+
+    </script>
+  </body>
+  </html>

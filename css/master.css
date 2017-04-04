@@ -1,0 +1,73 @@
+footer {
+  margin: 0 auto;
+  text-align: center;
+}
+
+#texto {
+  text-align: left;
+  background: #FFFCAA;
+  font-family: sans-serif;
+  font-size: 18px;
+  padding: 2ch;
+  display: block;
+  width: 100%;
+  min-height: 400px;
+}
+
+.heart {
+  color: #E30871;
+}
+
+a:link, a:visited {
+  color: #00455c;
+}
+
+a:hover {
+  color: #E30871;
+}
+
+#keyboard-container button
+{
+  width: calc(80% / 10);
+  height: 130px;
+  border: none;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: rgba(0,0,0,0);
+}
+
+button:hover {
+  color: rgba(0,0,0,1);
+  background-blend-mode: lighten;
+}
+
+button[name="q"] {background-image: url("../img/keyboard/q.jpg")}
+button[name="w"] {background-image: url("../img/keyboard/w.jpg");}
+button[name="e"] {background-image: url("../img/keyboard/e.jpg");}
+button[name="r"] {background-image: url("../img/keyboard/r.jpg");}
+button[name="t"] {background-image: url("../img/keyboard/t.jpg");}
+button[name="y"] {background-image: url("../img/keyboard/y.jpg");}
+button[name="u"] {background-image: url("../img/keyboard/u.jpg");}
+button[name="i"] {background-image: url("../img/keyboard/i.jpg");}
+button[name="o"] {background-image: url("../img/keyboard/o.jpg");}
+button[name="p"] {background-image: url("../img/keyboard/p.jpg");}
+
+button[name="a"] {background-image: url("../img/keyboard/a.jpg");}
+button[name="s"] {background-image: url("../img/keyboard/s.jpg");}
+button[name="d"] {background-image: url("../img/keyboard/d.jpg");}
+button[name="f"] {background-image: url("../img/keyboard/f.jpg");}
+button[name="g"] {background-image: url("../img/keyboard/g.jpg");}
+button[name="h"] {background-image: url("../img/keyboard/h.jpg");}
+button[name="j"] {background-image: url("../img/keyboard/j.jpg");}
+button[name="k"] {background-image: url("../img/keyboard/k.jpg");}
+button[name="l"] {background-image: url("../img/keyboard/l.jpg");}
+button[name="ç"] {background-image: url("../img/keyboard/ç.jpg");}
+
+button[name="z"] {background-image: url("../img/keyboard/z.jpg");}
+button[name="x"] {background-image: url("../img/keyboard/x.jpg");}
+button[name="c"] {background-image: url("../img/keyboard/c.jpg");}
+button[name="v"] {background-image: url("../img/keyboard/v.jpg");}
+button[name="b"] {background-image: url("../img/keyboard/b.jpg");}
+button[name="n"] {background-image: url("../img/keyboard/n.jpg");}
+button[name="m"] {background-image: url("../img/keyboard/m.jpg");}
