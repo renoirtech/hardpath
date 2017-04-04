@@ -2,6 +2,8 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Decifre o livro</title>
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -82,33 +84,33 @@
   </div>
 
   <!-- Modal -->
-<div id="modalCreditos" class="modal fade" role="dialog">
-  <div class="modal-dialog">
+  <div id="modalCreditos" class="modal fade" role="dialog">
+    <div class="modal-dialog">
 
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Sobre o projeto e creditos</h4>
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Sobre o projeto e creditos</h4>
+        </div>
+        <div class="modal-body">
+          <p>Hello folks, fizemos esse teclado com o intuito de acelerar o processo de tradução dos documentos deixados por <a href="https://glo.bo/2oSMn6C">Bruno Silva Borges</a>,</p>
+          <p>se deseja melhorar a qualidade da mesma basta contribuir em nosso repositório (<a href="https://github.com/renoirfaria/hardpath">renoirfaria/hardpath</a>)</p>
+          <p>Criado com <span class="heart">&hearts;</span> por <a href="mailto:renofaria@gmail.com">@renoirfaria</a> e <a href="mailto:igrrincon@gmail.com">@igorrincon</a> e todos os outros <a href="https://github.com/renoirfaria/hardpath/graphs/contributors">contribuintes.</a></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
       </div>
-      <div class="modal-body">
-        <p>Hello folks, fizemos esse teclado com o intuito de acelerar o processo de tradução dos documentos deixados por <a href="https://glo.bo/2oSMn6C">Bruno Silva Borges</a>,</p>
-        <p>se deseja melhorar a qualidade da mesma basta contribuir em nosso repositório (<a href="https://github.com/renoirfaria/hardpath">renoirfaria/hardpath</a>)</p>
-        <p>Criado com <span class="heart">&hearts;</span> por <a href="mailto:renofaria@gmail.com">@renoirfaria</a> e <a href="mailto:igrrincon@gmail.com">@igorrincon</a> e todos os outros <a href="https://github.com/renoirfaria/hardpath/graphs/contributors">contribuintes.</a></p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
+
     </div>
-
   </div>
-</div>
 
-    <script src="js/classes/Texto.js" charset="utf-8"></script>
-    <script src="js/controllers/KeyboardController.js" charset="utf-8"></script>
-    <script type="text/javascript">
-    let controller = new KeyboardController();
+  <script src="js/classes/Texto.js" charset="utf-8"></script>
+  <script src="js/controllers/KeyboardController.js" charset="utf-8"></script>
+  <script type="text/javascript">
+  let controller = new KeyboardController();
 
-    </script>
-  </body>
-  </html>
+  </script>
+</body>
+</html>
