@@ -52,7 +52,8 @@ a:hover {
   background-size:     100%;
   background-repeat:   no-repeat;
   background-position: center center;
-  background-color: #FFFFFF;
+  background-color: #F3F3F3;
+  background-size: contain;
   color:rgba(255,255,255,0);
   padding:20px;
 }
