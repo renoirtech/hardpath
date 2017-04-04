@@ -49,29 +49,27 @@ a:hover {
 
 #keyboard-container button
 {
-  margin: 0.2ch;
-  border: 2px solid rgba(0,0,0,.5);
-  width: calc(80% / 10);
-  height: 130px;
-  border: none;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  color: rgba(0,0,0,0);
+  background-size:     100%;
+  background-repeat:   no-repeat;
+  background-position: center center;
+  background-color: #FFFFFF;
+  color:rgba(255,255,255,0);
+  padding:20px;
+}
+#keyboard-container button:hover{
+  color:rgba(0,0,0,1);
+}
+#keyboard-container button.disabled:hover{
+  color:rgba(255,255,255,0);
 }
 
 button:hover {
-  color: rgba(0,0,0,1) !important;
   background-blend-mode: lighten;
 }
 
 .disabled {
   cursor: not-allowed;
   background: #9F9F9F;
-}
-
-.disabled:hover {
-  color: #9F9F9F !important;
 }
 
 button[name="q"] {background-image: url("../img/keyboard/q.jpg")}
