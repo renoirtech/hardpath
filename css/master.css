@@ -61,7 +61,7 @@ a:hover {
 }
 
 button:hover {
-  color: rgba(0,0,0,1);
+  color: rgba(0,0,0,1) !important;
   background-blend-mode: lighten;
 }
 

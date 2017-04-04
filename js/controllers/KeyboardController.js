@@ -20,7 +20,10 @@ class KeyboardController {
 
   obter()
   {
-    this.texto.innerHTML = localStorage.getItem("decifre-o-livro-com");
-    alert('Texto carregado com sucesso');
+    let texto_obtido = this.texto.innerHTML = localStorage.getItem("decifre-o-livro-com");
+    if(texto_obtido !== null)
+    {
+      alert('Texto carregado com sucesso');
+    }
   }
 }
