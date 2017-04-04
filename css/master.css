@@ -1,6 +1,14 @@
+body {
+  background: #F4F4F4;
+}
+
 footer {
   margin: 0 auto;
   text-align: center;
+}
+
+.navbar-nav li button {
+  margin-top: 1ch;
 }
 
 #texto {
@@ -26,8 +34,23 @@ a:hover {
   color: #E30871;
 }
 
+.noPadding {
+  padding: 0;
+}
+
+.noMargin {
+  margin: 0;
+}
+
+#keyboard-container {
+  background: #F4F4F4;
+  text-align: center;
+}
+
 #keyboard-container button
 {
+  margin: 0.2ch;
+  border: 2px solid rgba(0,0,0,.5);
   width: calc(80% / 10);
   height: 130px;
   border: none;
