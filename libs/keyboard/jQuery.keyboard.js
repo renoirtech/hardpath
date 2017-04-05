@@ -103,7 +103,7 @@ jQuery.fn.extend({
 	spaceBarRow.addClass('keyboard-row spacebar');
 	var spaceBarKey = $("<button />");
 	spaceBarKey.addClass('btn key');
-	spaceBarKey.text(" ");
+	spaceBarKey.val(" ");
 	var buttonWrap = $("<div />");
 	buttonWrap.addClass("keyWrap spacebar");
 	buttonWrap.append(spaceBarKey);
