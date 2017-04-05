@@ -25,7 +25,7 @@ jQuery.fn.extend({
 				var btnSwitchContainer = $("<div />");
 				var btnSwitch = $("<button />");
 				btnSwitch.addClass("btn pull-right");
-				btnSwitch.text("Alterar fonte");
+				btnSwitch.text("Alterar fonte (tab)");
 				btnSwitch.on("click", function(){
 					var currentFont = $(this).parents(".keyboard").find(".keyboard-container button").css("font-family");
 					var font = params.fonts[1];
@@ -39,6 +39,14 @@ jQuery.fn.extend({
 							font = params.fonts[0];
 
 						$(this).parents(".keyboard").find(".keyboard-container .key .help-block").css("font-family", font);
+					}
+				});
+				$(document).on('keydown', function(e){
+					var keyCode = e.keyCode || e.which; 
+
+					if (keyCode == 9) { 
+						e.preventDefault(); 
+						btnSwitch.trigger('click');
 					}
 				});
 				btnSwitchContainer.append(btnSwitch);
