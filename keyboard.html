@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		 <style type="text/css">
+		 	.keyboard-container{
+		 	}
+		 	.keyboard-container .keyboard-row{
+		 		display: table-row;
+		 		margin:0.2em 0;
+		 		width: 100%;
+		 	}
+		 	.keyboard-container .keyboard-row .keyWrap{
+				display: table-cell;
+		 	}
+		 	.keyboard-container .keyboard-row .keyWrap.spacebar{
+		 		width: 100%;
+		 	}
+		 	.keyboard-container .keyboard-row .keyWrap button{
+		 		float: none;
+		 		margin:0 0.2em;
+		 		text-transform: capitalize;
+		 		min-width: 3em;
+		 	}
+		 	.keyboard-container .keyboard-row .keyWrap button,
+		 	.keyboard-container .keyboard-row .keyWrap button:hover,
+		 	.keyboard-container .keyboard-row .keyWrap button:active{
+		 		outline: none;
+		 	}
+		 	.keyboard-container .keyboard-row .spacebar{
+		 		display: block;
+		 		height: 2em;
+		 		width:100%;
+		 	}
+		 </style>
+	</head>
+	<body>
+		<input type='text' class='input-lg' id='main_input' />
+		<div id='keyboard' data-target='#main_input'></div>
+		<script type="text/javascript">
+			jQuery.fn.extend({
+		   		keyboard: function() {
+		   			/* Imprimindo todas as teclas do teclado */
+					var keys = [
+						['q','w','e','r','t','y','u','i','o','p'],
+						['a','s','d','f','g','h','j','k','l','ç'],
+						['z','x','c','v','b','n','m']
+					];
+					var container = $("<div />");
+					container.addClass("keyboard-container");
+					for(var row = 0; row < keys.length; row++){
+						var keyboardRow = $("<div>");
+						keyboardRow.addClass('keyboard-row col-xs-12 text-center');
+
+						for(var key = 0; key < keys[row].length; key++){
+							var keyLetter = keys[row][key];
+							var buttonWrap = $("<div />");
+							buttonWrap.addClass("keyWrap");
+							var button = $("<button />");
+							button.addClass('btn');
+							button.text(keyLetter);
+
+							buttonWrap.append(button);
+							keyboardRow.append(buttonWrap);
+
+						}
+
+						container.append(keyboardRow);
+					}
+
+					/* Adicionando barra de espaço */
+					var spaceBarRow = $("<div>");
+					spaceBarRow.addClass('keyboard-row col-xs-12 text-center');
+					var spaceBarKey = $("<button />");
+					spaceBarKey.addClass('btn spacebar');
+					var buttonWrap = $("<div />");
+					buttonWrap.addClass("keyWrap spacebar");
+					buttonWrap.append(spaceBarKey);
+					spaceBarRow.append(buttonWrap);
+					container.append(spaceBarRow);
+
+
+					$(this).append(container);
+				}
+			});
+			$("#keyboard").keyboard();
+		</script>
+	</body>
+</html>
