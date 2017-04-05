@@ -33,6 +33,13 @@ jQuery.fn.extend({
 						font = params.fonts[0];
 
 					$(this).parents(".keyboard").find(".keyboard-container").css("font-family", font);
+					if(params.showBoth == true){
+						var font = params.fonts[1];
+						if(currentFont != font)
+							font = params.fonts[0];
+						
+						$(this).parents(".keyboard").find(".keyboard-container .key .help-block").css("font-family", font);
+					}
 				});
 				btnSwitchContainer.append(btnSwitch);
 				$(this).append(btnSwitchContainer);
@@ -72,10 +79,17 @@ jQuery.fn.extend({
 			var keyLetter = keys[row][key];
 			var buttonWrap = $("<div />");
 			buttonWrap.addClass("keyWrap text-center");
+
 			var button = $("<button />");
 			button.addClass("btn key");
-			
 			button.text(keyLetter);
+			if(params.showBoth == true){
+				var originalFont = $("<span />");
+				originalFont.addClass("help-block");
+				originalFont.text(keyLetter);
+				originalFont.css("font-family", params.fonts[1]);
+				button.append(originalFont);
+			}
 
 			buttonWrap.append(button);
 			keyboardRow.append(buttonWrap);

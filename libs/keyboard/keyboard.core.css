@@ -18,6 +18,15 @@ display: table-cell;
 	float: none;
 	text-transform: capitalize;
 	min-width: 3em;
+	position: relative;
+}
+.keyboard-container .keyboard-row .keyWrap button .help-block{
+	bottom:0;
+	display: block;
+	font-size:0.8em;
+    margin: 0.1em;
+	position: absolute;
+	right: 0.1em;
 }
 .keyboard-container .keyboard-row .keyWrap button,
 .keyboard-container .keyboard-row .keyWrap button:hover,

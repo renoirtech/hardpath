@@ -12,6 +12,7 @@
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/master.css">
+  <link rel="stylesheet" href="fonts/giordano/font.giordano.css" />
   	<link rel="stylesheet" href="libs/keyboard/keyboard.core.css" />
   	<link rel="stylesheet" href="libs/keyboard/keyboard.default.css" />
 	<script type="text/javascript" src='libs/keyboard/jQuery.keyboard.js'></script>
@@ -144,8 +145,9 @@
 	let controller = new KeyboardController();
   	$("#keyboard").keyboard({
   		target: '#texto',
-		fonts: ['Arial', 'monospace'],
-		toggle: true
+		fonts: ['Arial', 'giordanoregular'],
+		toggle: true,
+		showBoth: true
 	});
   </script>
 </body>
