@@ -27,17 +27,17 @@ jQuery.fn.extend({
 				btnSwitch.addClass("btn pull-right");
 				btnSwitch.text("Alterar fonte");
 				btnSwitch.on("click", function(){
-					var currentFont = $(this).parents(".keyboard").find(".keyboard-container").css("font-family");
+					var currentFont = $(this).parents(".keyboard").find(".keyboard-container button").css("font-family");
 					var font = params.fonts[1];
 					if(currentFont == font)
 						font = params.fonts[0];
 
-					$(this).parents(".keyboard").find(".keyboard-container").css("font-family", font);
+					$(this).parents(".keyboard").find(".keyboard-container button").css("font-family", font);
 					if(params.showBoth == true){
 						var font = params.fonts[1];
 						if(currentFont != font)
 							font = params.fonts[0];
-						
+
 						$(this).parents(".keyboard").find(".keyboard-container .key .help-block").css("font-family", font);
 					}
 				});
@@ -53,7 +53,7 @@ jQuery.fn.extend({
 		['a','s','d','f','g','h','j','k','l','ç'],
 		['z','x','c','v','b','n','m']
 	];
-	
+
 
 	var maxKeysPerRow = 0; /* Quantidade de teclas na linha (serve para centralizar teclas */
 	for(var row = 0; row < keys.length; row++){
@@ -82,12 +82,11 @@ jQuery.fn.extend({
 
 			var button = $("<button />");
 			button.addClass("btn key");
-			button.text(keyLetter);
+			button.text(keyLetter).val(keyLetter).css("font-family", params.fonts[1]);;
 			if(params.showBoth == true){
 				var originalFont = $("<span />");
 				originalFont.addClass("help-block");
 				originalFont.text(keyLetter);
-				originalFont.css("font-family", params.fonts[1]);
 				button.append(originalFont);
 			}
 
@@ -114,8 +113,9 @@ jQuery.fn.extend({
 
 	$(this).append(container);
 
-	$(this).find("button.key").on("click", function(){
-		var text = self.target.val() + $(this).text();
+	$(this).find("button.key").on("click", function(event){
+		console.log($(this).text());
+		var text = self.target.val() + $(this).val();
 		self.target.val(text);
 	});
 }

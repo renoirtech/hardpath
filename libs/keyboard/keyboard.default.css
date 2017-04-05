@@ -1,5 +1,70 @@
-.keyboard{
+button:hover {
+  background-blend-mode: lighten;
+}
+.keyboard {
 	background: #333333;
-	padding:1em;
-	max-width: 600px;
+	width: 100%;
+	max-width: 100%;
+	text-align: center;
+}
+.keyboard > div:first-child {
+	padding: 2em 2em 0 0;
+}
+.keyboard-container {
+	position: relative;
+	display: inline-block;
+	width: auto;
+	padding: 2em 1em;
+}
+.keyboard-container button
+{
+  /* background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 80% 80%; */
+  background-color: #F3F3F3;
+  font-size: 1.4em;
+  color:rgba(0,0,0,1);
+  padding:1em;
+}
+.keyboard-container button:hover {
+	background-color: #fff;
+}
+/* .keyboard-container button[value="q"] {background-image: url("../../img/keyboard/q.jpg")}
+.keyboard-container button[value="w"] {background-image: url("../../img/keyboard/w.jpg");}
+.keyboard-container button[value="e"] {background-image: url("../../img/keyboard/e.jpg");}
+.keyboard-container button[value="r"] {background-image: url("../../img/keyboard/r.jpg");}
+.keyboard-container button[value="t"] {background-image: url("../../img/keyboard/t.jpg");}
+.keyboard-container button[value="y"] {background-image: url("../../img/keyboard/y.jpg");}
+.keyboard-container button[value="u"] {background-image: url("../../img/keyboard/u.jpg");}
+.keyboard-container button[value="i"] {background-image: url("../../img/keyboard/i.jpg");}
+.keyboard-container button[value="o"] {background-image: url("../../img/keyboard/o.jpg");}
+.keyboard-container button[value="p"] {background-image: url("../../img/keyboard/p.jpg");}
+
+.keyboard-container button[value="a"] {background-image: url("../../img/keyboard/a.jpg");}
+.keyboard-container button[value="s"] {background-image: url("../../img/keyboard/s.jpg");}
+.keyboard-container button[value="d"] {background-image: url("../../img/keyboard/d.jpg");}
+.keyboard-container button[value="f"] {background-image: url("../../img/keyboard/f.jpg");}
+.keyboard-container button[value="g"] {background-image: url("../../img/keyboard/g.jpg");}
+.keyboard-container button[value="h"] {background-image: url("../../img/keyboard/h.jpg");}
+.keyboard-container button[value="j"] {background-image: url("../../img/keyboard/j.jpg");}
+.keyboard-container button[value="k"] {background-image: url("../../img/keyboard/k.jpg");}
+.keyboard-container button[value="l"] {background-image: url("../../img/keyboard/l.jpg");}
+.keyboard-container button[value="ç"] {background-image: url("../../img/keyboard/ç.jpg");}
+
+.keyboard-container button[value="z"] {background-image: url("../../img/keyboard/z.jpg");}
+.keyboard-container button[value="x"] {background-image: url("../../img/keyboard/x.jpg");}
+.keyboard-container button[value="c"] {background-image: url("../../img/keyboard/c.jpg");}
+.keyboard-container button[value="v"] {background-image: url("../../img/keyboard/v.jpg");}
+.keyboard-container button[value="b"] {background-image: url("../../img/keyboard/b.jpg");}
+.keyboard-container button[value="n"] {background-image: url("../../img/keyboard/n.jpg");}
+.keyboard-container button[value="m"] {background-image: url("../../img/keyboard/m.jpg");} */
+
+.keyboard-container .keyboard-row.spacebar .keyWrap.spacebar button {
+	height: 2em;
+	width:100%;
+}
+.keyboard-container .keyboard-row .keyWrap button .help-block {
+	font-family: sans-serif;
+	font-size: 0.6em;
 }
