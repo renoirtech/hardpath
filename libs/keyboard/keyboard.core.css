@@ -1,0 +1,49 @@
+.keyboard{
+	max-width: 520px;
+}
+.keyboard-container{
+	border-collapse:separate; 
+	border-spacing: 0.5em;
+	display: table;
+	width:100%;
+}
+.keyboard-container .keyboard-row{
+	display: table-row;
+	width: 100%;
+}
+.keyboard-container .keyboard-row .keyWrap{
+display: table-cell;
+}
+.keyboard-container .keyboard-row .keyWrap button{
+	float: none;
+	text-transform: capitalize;
+	min-width: 3em;
+	position: relative;
+}
+.keyboard-container .keyboard-row .keyWrap button .help-block{
+	bottom:0;
+	display: block;
+	font-size:0.8em;
+    margin: 0.1em;
+	position: absolute;
+	right: 0.1em;
+}
+.keyboard-container .keyboard-row .keyWrap button,
+.keyboard-container .keyboard-row .keyWrap button:hover,
+.keyboard-container .keyboard-row .keyWrap button:active{
+	outline: none;
+}
+.keyboard-container .keyboard-row.spacebar{
+	caption-side: bottom;
+	display: table-caption;
+	padding:0 0.5em;
+	width:100%;
+}
+.keyboard-container .keyboard-row .keyWrap.spacebar{
+	display: block;
+	width: 100%;
+}
+.keyboard-container .keyboard-row.spacebar .keyWrap.spacebar button{
+	height: 2em;
+	width:100%;
+}
