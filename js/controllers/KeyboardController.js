@@ -9,24 +9,18 @@ class KeyboardController {
   {
     let btn       = elemento;
     let tecla     = btn.name;
-
-    let curPos =  this.texto.selectionStart;
-    let textAreaTxt = this.texto.value;
-
-    this.texto.value = textAreaTxt.substring(0, curPos) + tecla + textAreaTxt.substring(curPos);
-    this.texto.focus();
-    this.texto.setSelectionRange(curPos+1, curPos+1);
+    this.texto.innerHTML += tecla;
   }
 
   salvar()
   {
-    localStorage.setItem("decifre-o-livro-com", this.texto.value);
+    localStorage.setItem("decifre-o-livro-com", this.texto.innerHTML);
     alert('Texto salvo com sucesso.');
   }
 
   obter()
   {
-    let texto_obtido = this.texto.value = localStorage.getItem("decifre-o-livro-com");
+    let texto_obtido = this.texto.innerHTML = localStorage.getItem("decifre-o-livro-com");
     if(texto_obtido !== null)
     {
       alert('Texto carregado com sucesso');
