@@ -10,7 +10,6 @@ Vá para a Wiki deste repositório, lá voce encontrará instruções de como su
 * Melhoria na qualidade do código do front-end (fizemos na pressa devido a urgência)
 
 ## Contate os fundadores
-g
 * Renoir dos Reis (@renoirfaria)
   renofaria@gmail.com
 * Igor Rincon (@igrrincon)
