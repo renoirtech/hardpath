@@ -47,3 +47,7 @@ a:hover {
 .heart {
   color: #E30871;
 }
+
+#keyboard_selector {
+  background: #F5F5F5;
+}
