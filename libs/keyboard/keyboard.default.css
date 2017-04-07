@@ -14,7 +14,7 @@ button:hover {
 	position: relative;
 	display: inline-block;
 	width: auto;
-	padding: 2em 1em;
+	padding: 2em 0;
 }
 .keyboard-container button
 {
