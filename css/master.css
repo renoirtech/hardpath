@@ -1,6 +1,5 @@
-body {
-  background: #FFF;
-  min-width: 768px;
+html, body, .container-fluid {
+    height:100%;
 }
 footer {
   margin: 0 auto;
@@ -46,12 +45,12 @@ a:hover {
 .heart {
   color: #E30871;
 }
-
 #keyboard_selector {
   background: #F5F5F5;
 }
 #editor{
   display: none;
+  height: 100%;
 }
 #page_selector{
 

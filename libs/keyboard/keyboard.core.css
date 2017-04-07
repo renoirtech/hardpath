@@ -17,7 +17,7 @@ display: table-cell;
 .keyboard-container .keyboard-row .keyWrap button{
 	float: none;
 	text-transform: capitalize;
-	min-width: 3em;
+	min-width: 2em;
 	position: relative;
 }
 .keyboard-container .keyboard-row .keyWrap button .help-block{
