@@ -1,5 +1,6 @@
-html, body, .container-fluid {
-    height:100%;
+body {
+  background: #FFF;
+  min-width: 768px;
 }
 footer {
   margin: 0 auto;
@@ -33,7 +34,8 @@ a:hover {
 #texto {
   display: block;
   width: 100%;
-  height: 50%;
+  height: 100%;
+  min-height: 500px;
   text-align: left;
   border: none;
   background: #FFFCAA;
@@ -45,24 +47,7 @@ a:hover {
 .heart {
   color: #E30871;
 }
+
 #keyboard_selector {
   background: #F5F5F5;
-}
-#editor{
-  display: none;
-  height: 100%;
-}
-#page_selector{
-
-}
-#page_selector .item{
-  border:1px solid #DEDEDE;
-  cursor: pointer;
-  height: 400px;
-  overflow: hidden;
-  padding:10px;
-  text-align: center;
-}
-#page_selector .item img{
-  height: 100%;
 }
