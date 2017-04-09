@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'codigo_numericoregular';
+    src: url('numerico-webfont.eot');
+    src: url('numerico-webfont.eot?#iefix') format('embedded-opentype'),
+         url('numerico-webfont.woff2') format('woff2'),
+         url('numerico-webfont.woff') format('woff'),
+         url('numerico-webfont.ttf') format('truetype'),
+         url('numerico-webfont.svg#codigo_numericoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+

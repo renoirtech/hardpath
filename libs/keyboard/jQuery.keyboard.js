@@ -154,7 +154,6 @@ jQuery.fn.extend({
 		$(this).append(container);
 
 		$(this).find("button.key").on("click", function(event){
-			console.log($(this).text());
 			var text = self.target.val() + $(this).val();
 			self.target.val(text);
 		});
